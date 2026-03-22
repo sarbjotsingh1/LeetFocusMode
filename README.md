@@ -1,27 +1,118 @@
-# LeetFocusMode (Chrome Extension)
+# 🚀 LeetFocusMode
 
-This extension automatically hides the `Easy` / `Medium` / `Hard` difficulty tag and (optionally) the `Hints` / `Discussion` / `Editorial` sections on `leetcode.com`.
+---
 
-## Load it in Chrome
+## ⚡ Why this exists
 
-1. Open `chrome://extensions`
-2. Turn on **Developer mode**
+Most developers:
+
+* Peek at hints too early ❌
+* Jump to solutions ❌
+* Never fully develop problem-solving skills ❌
+
+**LeetFocusMode fixes that.**
+
+👉 Solve first
+👉 Reveal later
+
+---
+
+## ✨ Features
+
+* 🎯 Hide **Easy / Medium / Hard** difficulty
+* 🧠 Hide **Hints, Editorial, Discussion**
+* ⚡ Toggle everything **instantly**
+* 🔁 Works with dynamic LeetCode UI
+* 🧩 Lightweight & zero config
+
+
+---
+
+## 📦 Installation
+
+### 🔹 Manual (Developer Mode)
+
+1. Open Chrome:
+   chrome://extensions
+
+2. Enable **Developer Mode** (top right)
+
 3. Click **Load unpacked**
-4. Select the folder: `LeetFocusMode`
 
-## Icons
+4. Select your folder:
+   LeetFocusMode
 
-Icons live in `icons/` and are wired in `manifest.json`:
+---
 
-- **`icons`** — used in `chrome://extensions`, the Chrome Web Store, and install dialogs (16 / 48 / 128 px).
-- **`action.default_icon`** — what you see on the toolbar next to the address bar.
+## 🎛️ Usage
 
-Replace `icons/icon16.png`, `icons/icon32.png`, `icons/icon48.png`, and `icons/icon128.png` with your own PNGs (same filenames). Use a square design; Chrome will scale.
+* Click the extension icon
+* Toggle what you want to hide:
 
-## Notes
+  * Difficulty
+  * Hints
+  * Discussion
+  * Editorial
 
-- The extension runs on all `https://leetcode.com/*` pages.
-- LeetCode renders content dynamically, so it uses a `MutationObserver` to keep hiding the tag if it appears later.
-- There is a popup UI (extension icon) with toggles for each item. Changes apply automatically (no page reload).
-- If it doesn't hide a section on your view, open DevTools on a LeetCode page and inspect the `Hints`/`Discussion`/`Editorial` header element—then we can tighten the selector in `content.js`.
+✅ Changes apply instantly — no refresh needed
 
+---
+
+## ⚙️ How it works
+
+* Runs on:
+  https://leetcode.com/*
+
+* Uses **MutationObserver** to handle dynamic content
+
+* Keeps elements hidden even after UI updates
+
+* Stores user preferences via `chrome.storage`
+
+---
+
+## 🎨 Icons
+
+Located in `icons/`:
+
+icons/icon16.png
+icons/icon32.png
+icons/icon48.png
+icons/icon128.png
+
+👉 Tip: Keep icons **simple and bold** for small sizes
+
+---
+
+## 🔒 Privacy
+
+* ❌ No personal data collected
+* ❌ No tracking or analytics
+* ✅ Runs entirely in your browser
+
+---
+
+## 🛠️ Troubleshooting
+
+If something isn’t hidden:
+
+1. Open DevTools on LeetCode
+2. Inspect the element (Hints / Editorial / etc.)
+3. Update selectors in `content.js`
+
+---
+
+## ⭐ Support
+
+If this helps you:
+
+* ⭐ Star the repo
+* 🔁 Share with friends
+* 💡 Suggest features
+
+---
+
+## 🏁 Philosophy
+
+> Solve first. Reveal later.
+> Think deeper. Code better.
