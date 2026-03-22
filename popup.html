@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LeetCode Hide Settings</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 12px;
+        width: 260px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        font-size: 13px;
+        color: #111;
+        background: #fff;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .row:last-child {
+        border-bottom: 0;
+      }
+      input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+      }
+      .title {
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .hint {
+        margin-top: 10px;
+        color: #555;
+        line-height: 1.3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">Hide on LeetCode</div>
+
+    <div class="row">
+      <input id="hideDifficulty" type="checkbox" />
+      <label for="hideDifficulty">Difficulty (Easy/Medium/Hard)</label>
+    </div>
+    <div class="row">
+      <input id="hideHints" type="checkbox" />
+      <label for="hideHints">Hints</label>
+    </div>
+    <div class="row">
+      <input id="hideDiscussion" type="checkbox" />
+      <label for="hideDiscussion">Discussion</label>
+    </div>
+    <div class="row">
+      <input id="hideEditorial" type="checkbox" />
+      <label for="hideEditorial">Editorial</label>
+    </div>
+    <div class="row">
+      <input id="hideTopics" type="checkbox" />
+      <label for="hideTopics">Topics</label>
+    </div>
+
+    <div class="hint">Changes apply automatically (no reload).</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
+
